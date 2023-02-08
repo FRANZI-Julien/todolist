@@ -109,7 +109,7 @@ button {
     --size: 20px;
   width: var(--size);
   height: var(--size);
-  background-color: #191A1E;
+  background-color: #d6dbed;
   border-radius: 50%;
   cursor: pointer;
   padding: 5px;
@@ -123,13 +123,13 @@ button {
   .boxList{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     border: none;
     border-radius: 15px;
     padding: 15px;
     background-color: #063351;
-    box-shadow: 6px 6px 12px #03273f,
-                -6px -6px 12px #062a41;
+    /* box-shadow: 6px 6px 12px #03273f,
+                -6px -6px 12px #062a41; */
     font-size: medium;
     font-weight: bold;
     max-width: 100%;
@@ -188,6 +188,20 @@ button {
  span {
   padding-left: 5px;
   overflow-wrap: break-word;
-  font-size: 0.8em;
+  font-size: 1em;
   width: 75%;
  }
+
+ .newT {
+   
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+ 

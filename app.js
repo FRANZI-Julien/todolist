@@ -48,10 +48,11 @@
           div.replaceChild(newTaskText, span);
           newTaskText.focus();
           
-          newTaskText.addEventListener("focus", function() {
+          newTaskText.addEventListener("blur", function() {
             span.innerHTML = newTaskText.value;
             div.replaceChild(span, newTaskText);
           });
+          newTaskText.className= "newT"
         });
         
       }
