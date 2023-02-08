@@ -28,7 +28,8 @@ body{
 .container {
     margin-right: 10%;
     margin-left: 10%;
-    width: auto;
+    width: 100%;
+    padding: 15px;
     margin-top: 10%;
     margin-bottom: 10%;
     height: auto;
@@ -105,7 +106,7 @@ button {
   }
 
   input[type="checkbox"] {
-    --size: 30px;
+    --size: 20px;
   width: var(--size);
   height: var(--size);
   background-color: #191A1E;
@@ -134,7 +135,7 @@ button {
     max-width: 100%;
     text-decoration: none;
     margin: 0;
-    
+    width: 80%;
     
    }
   
@@ -149,17 +150,44 @@ button {
 
   li {
     list-style-type: none;
-    
+    margin-bottom: 15px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
   }
  
-  ul{
-    padding: ;
+  .editB {
+    background: none;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 50%;
   }
 
-  .editB {
-    
+  .editB::after{
+    background: rgba(170, 170, 170, 0.062);
+    transition: 0.5s;
   }
 
   .deleteB {
-
+    background: none;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 50%;
   }
+
+  .deleteBa::after {
+    background: rgba(170, 170, 170, 0.062);
+    transition: 0.5s;
+  }
+  
+  #tasksList{
+    padding-inline-start: 0px;
+    margin-bottom: 1px;
+  }
+
+ span {
+  padding-left: 5px;
+  overflow-wrap: break-word;
+  font-size: 0.8em;
+  width: 75%;
+ }

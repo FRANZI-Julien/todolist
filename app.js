@@ -32,6 +32,7 @@
         checkbox.addEventListener("change", function() {
           if (checkbox.checked) {
             span.style.textDecoration = "line-through";
+            span.style.textDecorationColor = "black";
           } else {
             span.style.textDecoration = "none";
           }
